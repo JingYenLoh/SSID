@@ -59,9 +59,18 @@ GEM
     awesome_print (1.8.0)
     bcrypt (3.1.13)
     builder (3.2.4)
+    coffee-rails (5.0.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 5.2.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     erubi (1.9.0)
+    execjs (2.7.0)
+    ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.3)
@@ -120,6 +129,14 @@ GEM
     rake (13.0.1)
     ref (2.0.0)
     rubyzip (2.3.0)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -133,8 +150,11 @@ GEM
       ref
     thor (1.0.1)
     thread_safe (0.3.6)
+    tilt (2.0.10)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -147,13 +167,16 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bcrypt
+  coffee-rails
   jquery-rails
   mysql2
   ptools
   rails (~> 6.0)
   rubyzip
+  sassc-rails
   sqlite3
   therubyracer
+  uglifier
   will_paginate
 
 BUNDLED WITH

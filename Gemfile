@@ -43,3 +43,8 @@ gem "awesome_print"
 
 # use to check if file is binary
 gem 'ptools'
+
+# required to load sassc in sprockets
+gem 'sassc-rails'
+gem 'coffee-rails'
+gem 'uglifier'
