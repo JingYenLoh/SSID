@@ -28,6 +28,10 @@ class AnnouncementsController < ApplicationController
     end
   }
 
+  def announcement_params
+    params.require(:announcement).permit(:title, :html_content)
+  end
+
   # GET /announcements
   def index
     @announcements = @user.courses.collect { |c| c.announcements }.flatten
