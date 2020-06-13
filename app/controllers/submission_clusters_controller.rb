@@ -16,7 +16,7 @@ along with SSID.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
 class SubmissionClustersController < ApplicationController
-  before_filter { |controller|
+  before_action { |controller|
     @course = nil
     if params[:id]
       @submission_cluster = SubmissionCluster.find(params[:id])

@@ -17,8 +17,8 @@ along with SSID.  If not, see <http://www.gnu.org/licenses/>.
 
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :authorize
-  before_filter :sanitize_id, only: [:index, :show, :edit, :update, :destroy]
+  before_action :authorize
+  before_action :sanitize_id, only: [:index, :show, :edit, :update, :destroy]
 
   protected
 
@@ -56,7 +56,7 @@ class ApplicationController < ActionController::Base
   # actions allowed for each role. The method delegates how to find the course object to the controller
   # Example usage:
   #
-  # before_filter { |controller|
+  # before_action { |controller|
   #   @course = get_course_from_params
   #   if params[:course_id]
   #     controller.send :authenticate_actions_for_role, UserCourseMembership::ROLE_TEACHING_STAFF,

@@ -16,7 +16,7 @@ along with SSID.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
 class SubmissionSimilaritiesController < ApplicationController
-  before_filter { |controller|
+  before_action { |controller|
     @course = nil
     if params[:assignment_id]
       @assignment = Assignment.find(params["assignment_id"])

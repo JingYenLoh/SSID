@@ -16,7 +16,7 @@ along with SSID.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
 class Admin::UsersController < ApplicationController
-  before_filter { |controller|
+  before_action { |controller|
     controller.send :authenticate_actions_for_admin, 
                     only: [ :index, :new, :create, :edit, :update, :destroy ] # all methods
   }

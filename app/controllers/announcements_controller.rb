@@ -16,7 +16,7 @@ along with SSID.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
 class AnnouncementsController < ApplicationController
-  before_filter { |controller|
+  before_action { |controller|
     if params[:announcement] and params[:announcement]["course_id"]
       @course = Course.find(params[:announcement]["course_id"])
       controller.send :authenticate_actions_for_role, UserCourseMembership::ROLE_TEACHING_ASSISTANT,
