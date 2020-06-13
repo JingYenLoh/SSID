@@ -1,3 +1,3 @@
 //= link application.css
 //= link application.js
-//= require_directory images
+//= link_tree ../images
