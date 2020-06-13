@@ -5,17 +5,17 @@ Student Submission Integrity Diagnosis (SSID) is a Ruby on Rails web application
 SSID works with lexers based on [ANTLR Grammars](http://www.antlr.org/grammar/list) so if you can find / write a grammar for it, SSID can detect and visualize plagiarism for it. SSID uses the [JavaScript InfoVis Toolkit](http://philogb.github.com/jit/) for its plagiarism visualization. Code display and syntax highlighting is handled by [google-code-prettify](http://code.google.com/p/google-code-prettify/). 
 
 ## Installation
-1. Install MySQL, Apache, Ruby (1.9.2), and [bundler](http://gembundler.com) v1.1.2 
+1. Install MySQL, Apache, Ruby, and [bundler](https://bundler.io)
 
 2. Download SSID from [its GitHub repository](https://github.com/WING-NUS/SSID)
 	<pre>git clone https://github.com/WING-NUS/SSID.git</pre>
 	
-3. Download [MySQL Connector/J version 5.1.13](http://dev.mysql.com/downloads/connector/) and place the downloaded file *mysql-connector-java-5.1.13-bin.jar* into the directory: *lib/java/jar*
+3. Download [MySQL Connector/J version 8.0.20](https://dev.mysql.com/downloads/connector/j) and place the downloaded file *mysql-connector-java-8.0.20-bin.jar* into the directory: *lib/java/jar*
 
 ## Configuration
 
 1. Copy *config/database.yml.mysql-template* to
-	 *config/database/database.yml* and modify it with your database settings
+	 *config/database.yml* and modify it with your database settings
 	 
 2. Run bundler to install the necessary gems (including rails) from the root
    directory of SSID:
