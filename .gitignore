@@ -45,3 +45,5 @@
 
 # Ignore .DS_Store
 .DS_Store
+
+/config/master.key
