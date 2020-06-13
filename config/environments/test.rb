@@ -35,9 +35,6 @@ SSID::Application.configure do
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
 
-  # whitelist attributes for mass-assignment
-  config.active_record.whitelist_attributes = true
-
   # Set time zone
   config.time_zone = "Singapore"
 
